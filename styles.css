@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background: var(--background);
+  height: 100vh;
+  color: var(--title);
+
+  display: flex;
+}
+.query-movie{
+  max-width: 630px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-topo{
+  width: 87px;
+  height: 63px;
+}
+.title-initial{
+  font-size: 40px;
+}
+
+.container-movie{
+  margin-top: 30px;
+}
+.container-movie .img-movie {
+  width: 171px;
+  height: 243px;
+  float: left;
+}
+.container-movie .title-movie, .container-movie .overview-movie{
+  float: right;
+  width: 423px;
+  text-align: left;
+}
+
+.btn-query {
+  width: 181px;
+  height: 47px;
+  margin-top: 30px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-query img{
+  width: 35px;
+  height: 25px;
+}
+
+.instruction{
+  margin-top: 35px;
+  font-size: 14px;
+  max-width: 381px;
+}
