@@ -12,7 +12,7 @@ import { API_KEY, BASE_URL, IMG_URL, language } from "./api.js";
 // getMovie(url)
 
 const movie = {
-  id: 5000,
+  id: 1858,
   img: ``,
   title: ``,
   description: ``,
@@ -39,7 +39,9 @@ const getMovie = async () => {
   document.querySelector("#img-movie").setAttribute("src", movie.img);
   document.querySelector("#title-movie").innerHTML = movie.title;
   document.querySelector("#overview-movie").innerHTML = movie.description;
+
+  document.querySelector('#view-movie').style.display = 'block'
 };
 
-getMovie();
+document.querySelector('#btn-query').addEventListener('click', getMovie)
 

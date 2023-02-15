@@ -38,6 +38,8 @@
 
 .container-movie{
   margin-top: 30px;
+
+  display: none;
 }
 .container-movie .img-movie {
   width: 171px;
