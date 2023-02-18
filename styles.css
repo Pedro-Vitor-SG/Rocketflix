@@ -101,15 +101,25 @@
   .main {
     padding: 50px 15px 150px; 
   }
+  .main.new-height{
+    height: inherit;
+  }
   .container-movie {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
+
   }
-  .container-movie .title-movie{
+  .container-movie .title-movie, .container-movie .overview-movie{
     text-align: center;
+    width: initial;
   }
   .instruction{
     font-size: 12px;
   }
+  .not-found h3 {
+    padding: 0;
+  }
+
 }

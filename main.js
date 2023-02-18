@@ -25,9 +25,11 @@ const getMovie = async () => {
   movie.img = `${IMG_URL}${data.poster_path}`;
   movie.title = data.title;
   movie.description = data.overview;
+  document.querySelector(".main").classList.add("new-height");
 
   if (data.success === false) {
     console.log("Não achou o filme");
+
     document.querySelector("#view-movie").classList.add("not-found");
     document
       .querySelector("#img-movie")
@@ -41,6 +43,7 @@ const getMovie = async () => {
     document.querySelector("#overview-movie").style.display = "none";
   } else {
     console.log("achou");
+
     document.querySelector("#view-movie").classList.remove("not-found");
 
     document.querySelector("#img-movie").setAttribute("src", movie.img);
@@ -50,7 +53,7 @@ const getMovie = async () => {
     document.querySelector("#title-movie").innerHTML = movie.title;
     document.querySelector("#overview-movie").style.display = "block";
     document.querySelector("#overview-movie").innerHTML = movie.description;
-    document.querySelector("#overview-movie").style.display = '-webkit-box';
+    document.querySelector("#overview-movie").style.display = "-webkit-box";
 
     document.querySelector("#view-movie").style.display = "flex";
   }
